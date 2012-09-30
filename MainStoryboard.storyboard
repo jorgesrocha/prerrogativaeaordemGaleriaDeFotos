@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="localizable" useAutolayout="YES" initialViewController="XOE-cM-e2B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XOE-cM-e2B">
     <dependencies>
         <development version="4500" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
@@ -12,43 +12,11 @@
                     <view key="view" contentMode="scaleToFill" id="ISu-af-xhR">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2gC-Qj-aPI">
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-ql-mSn">
-                                        <color key="pageIndicatorTintColor" white="0.91540260039999999" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </pageControl>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5f-iZ-Sj0"/>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="B5f-iZ-Sj0" firstAttribute="top" secondItem="2gC-Qj-aPI" secondAttribute="top" type="default" id="5vZ-lL-Dfs"/>
-                                    <constraint firstItem="B5f-iZ-Sj0" firstAttribute="leading" secondItem="2gC-Qj-aPI" secondAttribute="leading" type="default" id="8eI-2L-t5Y"/>
-                                    <constraint firstItem="B5f-iZ-Sj0" firstAttribute="centerY" secondItem="2gC-Qj-aPI" secondAttribute="centerY" type="default" id="dbz-76-Ntl"/>
-                                    <constraint firstItem="gh0-ql-mSn" firstAttribute="top" secondItem="2gC-Qj-aPI" secondAttribute="top" constant="328" id="grY-QG-xgk"/>
-                                    <constraint firstItem="B5f-iZ-Sj0" firstAttribute="centerX" secondItem="2gC-Qj-aPI" secondAttribute="centerX" type="default" id="sI0-41-qn3"/>
-                                    <constraint firstItem="B5f-iZ-Sj0" firstAttribute="bottom" secondItem="2gC-Qj-aPI" secondAttribute="bottom" type="default" id="tpg-7k-5L8"/>
-                                    <constraint firstItem="gh0-ql-mSn" firstAttribute="centerX" secondItem="B5f-iZ-Sj0" secondAttribute="centerX" type="default" id="uIs-kJ-l6A"/>
-                                    <constraint firstItem="B5f-iZ-Sj0" firstAttribute="trailing" secondItem="2gC-Qj-aPI" secondAttribute="trailing" type="default" id="yKT-xm-P2A"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2gC-Qj-aPI" firstAttribute="leading" secondItem="ISu-af-xhR" secondAttribute="leading" type="default" id="DFu-iW-tgM"/>
-                            <constraint firstItem="2gC-Qj-aPI" firstAttribute="top" secondItem="ISu-af-xhR" secondAttribute="top" type="default" id="d1c-Kx-axc"/>
-                            <constraint firstItem="2gC-Qj-aPI" firstAttribute="bottom" secondItem="ISu-af-xhR" secondAttribute="bottom" type="default" id="k0L-iz-FjX"/>
-                            <constraint firstItem="2gC-Qj-aPI" firstAttribute="trailing" secondItem="ISu-af-xhR" secondAttribute="trailing" type="default" id="sHv-O9-SlR"/>
-                        </constraints>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="RTm-Cs-vLi"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="imageView" destination="B5f-iZ-Sj0" id="am6-MT-e9e"/>
-                        <outlet property="pageControl" destination="gh0-ql-mSn" id="pNN-pA-hxf"/>
-                        <outlet property="scrollView" destination="2gC-Qj-aPI" id="ju1-l4-3ad"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeA-fb-5ZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -381,7 +349,7 @@ Fernando Antônio Jambo Muniz Falcão iniciou sua carreira em 1993 quando cursou
             <objects>
                 <tableViewController id="b79-1y-4Te" customClass="NoticiasTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="qcY-Tj-RRh">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -639,85 +607,9 @@ Fernando Antônio Jambo Muniz Falcão iniciou sua carreira em 1993 quando cursou
         <image name="menu_home@2x.png" width="640" height="320"/>
         <image name="proposta.png" width="320" height="81"/>
     </resources>
-    <classes>
-        <class className="BiografiaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BiografiaViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="EmailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EmailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clicaNoBackground:"/>
-                <relationship kind="action" name="clicaNoBotaoSend:"/>
-                <relationship kind="action" name="enviarEmail:"/>
-                <relationship kind="outlet" name="botaoEnviarEmail" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="nomeTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textoTextView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="FotosViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FotosViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="HomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="NoticiasCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoticiasCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="imagemNoticia" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="labelTitulo" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NoticiasTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoticiasTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="indicadorDeAtividade" candidateClass="UIActivityIndicatorView"/>
-            </relationships>
-        </class>
-        <class className="NoticiasViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoticiasViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="texto" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="titulo" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="PropostasViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PropostasViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="VideoCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideoCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="labelVideoCell" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="VideoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="VideosTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideosTableViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

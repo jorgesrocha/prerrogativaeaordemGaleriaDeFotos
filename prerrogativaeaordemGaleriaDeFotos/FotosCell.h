@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface FotosCell : UITableViewCell
 @property (nonatomic,strong) IBOutlet UIImageView *imagemGaleriaUIMageView;
 @property (nonatomic, strong) IBOutlet UILabel *tituloLabel;

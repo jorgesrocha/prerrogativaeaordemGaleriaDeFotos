@@ -29,7 +29,7 @@
 //
 
 #import "RXMLElement.h"
-#import "RSSLoader.h";
+#import "RSSLoader.h"//;
 
 // macros for supporting ARC/NON-ARC without need for a branch
 
